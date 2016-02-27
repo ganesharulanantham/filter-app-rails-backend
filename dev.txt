@@ -3,3 +3,14 @@
 3. Create table screening 'rails generate screening'
 
   rails g model screening title:string locations:string release_year:integer production_company:string actor1:string actor2:string actor3:string director:string distributor:string writer:string
+4. Sample data imported as sample.json
+   file = File.read('sample.json')
+   records = JSON.parse(file)
+   Screening.connection
+   Screening.create(records)
+
+   Rake task to bootstrap app
+     rake app:bootstrap
+   Rake task to only seed data
+     rake app:seed
+#----- initial backend setup done ----#
