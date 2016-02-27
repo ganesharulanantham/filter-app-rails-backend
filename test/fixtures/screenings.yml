@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  locations: MyString
+  release_year: 1
+  production_company: MyString
+  actor1: MyString
+  actor2: MyString
+  actor3: MyString
+  director: MyString
+  distributor: MyString
+  writer: MyString
+
+two:
+  title: MyString
+  locations: MyString
+  release_year: 1
+  production_company: MyString
+  actor1: MyString
+  actor2: MyString
+  actor3: MyString
+  director: MyString
+  distributor: MyString
+  writer: MyString
