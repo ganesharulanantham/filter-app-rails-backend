@@ -1,0 +1,5 @@
+1. Basic Rails app 4.2.22
+2. Switch to mysql2 db
+3. Create table screening 'rails generate screening'
+
+  rails g model screening title:string description:text product:references
