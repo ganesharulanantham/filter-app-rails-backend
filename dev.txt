@@ -2,4 +2,4 @@
 2. Switch to mysql2 db
 3. Create table screening 'rails generate screening'
 
-  rails g model screening title:string description:text product:references
+  rails g model screening title:string locations:string release_year:integer production_company:string actor1:string actor2:string actor3:string director:string distributor:string writer:string
