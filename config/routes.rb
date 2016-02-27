@@ -53,5 +53,8 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  resources :screenings
+    resources :screenings do |e|
+      post 'filters', on: :collection
+    end
+
 end

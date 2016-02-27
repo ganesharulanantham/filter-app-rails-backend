@@ -1,0 +1,14 @@
+Acceptable Format:
+Path:
+POST .../screenings/filters
+params:
+{"attributes": { "title": { "operator": "is_equal_to", "value": "180"},
+                 "locations": {"operator": "is_equal_to", "value": "City Hall"},
+                 "release_year": { "operator": "is_equal_to", "value": "2011"},
+                 "production_company": { "operator": "is_equal_to", "value": "SPI Cinemas"},
+                 "actor_1": { "operator": "is_equal_to", "value": "Siddarth"},
+                 "actor_2": {"operator": "is_equal_to", "value": "Nithya Menon"},
+                 "actor_3": { "operator": "is_equal_to", "value": "Priya Anand"},
+                 "director": { "operator": "is_equal_to", "value": "Jayendra"},
+                 "writer": { "operator": "is_equal_to", "value": "Umarji Anuradha, Jayendra, Aarthi Sriram, & Suba"}
+                }}

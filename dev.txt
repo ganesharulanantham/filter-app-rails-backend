@@ -14,3 +14,12 @@
    Rake task to only seed data
      rake app:seed
 #----- initial backend setup done ----#
+
+5. Filter post with params to get specific result is done
+
+
+6. Setup an ember app to test the filter functions
+
+
+6. For filter options http://stackoverflow.com/questions/3213998/performance-of-like-query-vs-full-text-search-contains-query
+ Will do basic with like now and will refer what is full text search
