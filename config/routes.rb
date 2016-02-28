@@ -55,6 +55,7 @@ Rails.application.routes.draw do
   #   end
     resources :screenings do |e|
       post 'filters', on: :collection
+      get  'options', on: :collection
     end
 
 end
