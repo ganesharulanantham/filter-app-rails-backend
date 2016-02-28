@@ -10,6 +10,9 @@ namespace :app do
     puts "Starts Seeding Table"
     sample_seed
     puts "End"
+    puts "Starts seeding location data"
+    seed_location_data
+    puts "End"
   end
 
   desc "Sample Seeds only data"
@@ -17,6 +20,15 @@ namespace :app do
     puts "Starts Seeding Table"
     sample_seed
     puts "End"
+    puts "Starts seeding location data"
+    seed_location_data
+    puts "End"
+  end
+
+  def seed_location_data
+    Screening.all.group(:locations).each do |e|
+       Screening.where(locations: e.locations).update_all(latitude: rand(35.0000...37.000), longitude: rand(-121.443...-119.000))
+    end
   end
 
   def sample_seed
