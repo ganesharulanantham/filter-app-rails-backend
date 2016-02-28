@@ -8,7 +8,7 @@ class ScreeningsController < ApplicationController
 
   def filters
     # Must handle the mysql error with single quotes
-    render json: Screening.where(construct_query_string)
+    render json: Screening.where(construct_query_string) #.limit(10)
   end
 
   def options
