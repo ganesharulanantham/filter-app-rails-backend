@@ -3,16 +3,24 @@ class ScreeningsController < ApplicationController
   skip_before_action :verify_authenticity_token
 
   def index
-    render json: Screening.all.to_json
+    render json: Screening.all
   end
 
   def filters
-    render json: Screening.where(construct_query_string).to_json
+    # Must handle the mysql error with single quotes
+    render json: Screening.where(construct_query_string)
+  end
+
+  def options
+    # Screening.where("title LIKE ?" , "%#{"s"}%")
+    # Screening.select('title, id').where("title LIKE ?" , "%#{"s"}%").group('title')
+    render json: Screening.select('id' + ',' + params[:key] + ' as text').where(params[:key] + " LIKE ?" , "%#{params[:value]}%").group(params[:key]), :root => false
   end
 
   private
-  
+
   def construct_query_string
+    return if params[:attributes].blank?
     str=''
     params[:attributes].each_with_index do |e, index|
     str += " and " if index != 0
