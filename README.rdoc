@@ -1,28 +1,22 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Filter-app - serves as a backend rails api for the filter-app-frontend.
+It is a simple prototype to work with tabular data of a city.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Sample data here have information of a Movies screened in San Francisco city 
+with following info:
+* Title
+* Locations
+* Release Year
+* Production Company
+* Director
+* Distributor
+* Writer
+* Actor 1
+* Actor 2
+* Actor 3
+* Fun Facts
+* Latitude
+* Longitude
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
