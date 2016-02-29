@@ -3,8 +3,20 @@
 Filter-app - serves as a backend rails api for the filter-app-frontend.
 It is a simple prototype to work with tabular data of a city.
 
+How to setup 
+-------------
 
+1. bundle install
 
+2. Create Database and sample seed
+	
+		rake app:bootstrap
+
+3. Run the server
+		
+		rails s 
+
+4. Connect to "http://localhost:3000/screenings.json"
 
 
 Frontend App api documentation
