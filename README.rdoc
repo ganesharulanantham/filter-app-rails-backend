@@ -9,12 +9,12 @@ How to setup
 1. bundle install
 
 2. Create Database and sample seed
-	
-		rake app:bootstrap
+    
+    rake app:bootstrap
 
 3. Run the server
-		
-		rails s 
+    
+    rails s 
 
 4. Connect to "http://localhost:3000/screenings.json"
 
