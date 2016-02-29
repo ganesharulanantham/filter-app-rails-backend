@@ -3,6 +3,12 @@
 Filter-app - serves as a backend rails api for the filter-app-frontend.
 It is a simple prototype to work with tabular data of a city.
 
+
+
+
+
+Frontend App api documentation
+
 Sample data here have information of a Movies screened in San Francisco city 
 with following info:
 * Title
@@ -100,6 +106,29 @@ Filtered data:
       operators: ex("is_equal_to" or "is_not_equal_to")
       value: Any string or integer
       condition: ex('or' or 'and')
+      
+3. Filter options quick search:
+   http://localhost:3000/screenings/options?offset=0&limit=10&sort_by=title&direction=desc&key=title&value=bie
+   Params: 
+    ex: key: 'title'  (any of the data attribute)
+        value: 'abc'  (query parameter)
+  
+  Unique option data:
+    [
+      {
+        "id": 438,
+        "text": "Herbie Rides Again"
+      },
+      {
+        "id": 362,
+        "text": "Freebie and the Bean"
+      },
+      {
+        "id": 90,
+        "text": "Babies"
+      }
+    ]
+        
       
       
                           
