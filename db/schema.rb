@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160227052255) do
+ActiveRecord::Schema.define(version: 20160228170015) do
 
   create_table "screenings", force: :cascade do |t|
     t.string   "title",              limit: 255
@@ -24,9 +24,11 @@ ActiveRecord::Schema.define(version: 20160227052255) do
     t.string   "director",           limit: 255
     t.string   "distributor",        limit: 255
     t.string   "writer",             limit: 255
-    t.datetime "created_at",                       null: false
-    t.datetime "updated_at",                       null: false
+    t.datetime "created_at",                                                 null: false
+    t.datetime "updated_at",                                                 null: false
     t.text     "fun_facts",          limit: 65535
+    t.decimal  "latitude",                         precision: 17, scale: 14
+    t.decimal  "longitude",                        precision: 17, scale: 14
   end
 
 end

@@ -1,0 +1,6 @@
+rand(-35.0000...-33.443)  precision = 17 scale = 14
+Seeded with random SF range
+ Screening.all.group(:locations).each do |e|
+    p Screening.where(locations: e.locations).length
+    Screening.where(locations: 'City Hall').update_all(latitude: rand(35.0000...37.000), longitude: rand(-121.443...-119.000))
+ end
