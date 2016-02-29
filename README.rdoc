@@ -3,8 +3,18 @@
 Filter-app - serves as a backend rails api for the filter-app-frontend.
 It is a simple prototype to work with tabular data of a city.
 
+Clone The project:
+-------------
+    Recursive clone to clone all the submodules
+
+    git clone --recursive git@gitlab.com:ganesh-hobbeez/filter-app.git
+
 How to setup 
 -------------
+
+Rails app for API:
+  
+  Go to Rails app folder path ex: cd filter-app/
 
 1. bundle install
 
@@ -17,6 +27,25 @@ How to setup
     rails s 
 
 4. Connect to "http://localhost:3000/screenings.json"
+
+Ember app as server:
+  
+  Go to Rails app folder path ex: cd filter-app/filter-app-frontend/
+  
+
+1. npm install
+
+2. bower install
+
+3. ember serve
+
+4. Connect to "http://localhost:4200/screenings"
+
+For info: 
+   Inside ember app host_url is specified in adatper/application.js pointing to rails api server
+   host: 'http://localhost:3000'
+  
+  
 
 
 Frontend App api documentation
