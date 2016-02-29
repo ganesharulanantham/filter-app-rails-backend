@@ -28,7 +28,7 @@ class ScreeningsController < ApplicationController
   end
 
   def order_by
-    sort_by + direction
+    sort_by +  ' ' + direction
   end
 
   def sort_by
