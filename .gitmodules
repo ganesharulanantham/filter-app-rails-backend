@@ -1,3 +1,0 @@
-[submodule "filter-app-frontend"]
-	path = filter-app-frontend
-	url = git@gitlab.com:ganesh-hobbeez/filter-app-frontend.git
